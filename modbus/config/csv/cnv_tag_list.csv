@@ -1,10 +1,9 @@
 address,name,data type,scaling,offset
-50,"CNV_P_DC_CMD_PCT[1,1]",Short,100,0
-51,"CNV_I_DC_CMD_PCT[1,1]",Short,100,0
-52,"CNV_I_DC_FB_A[1,1]",Short,1,0
-53,"CNV_P_DC_FB_kW[1,1]",Short,1,0
-54,"CNV_FLT_CODE[1,1]",Word,1,0
-55,"CNV_WARN_CODE[1,1]",Word,1,0
-56,"CNV_STS_CODE[1,1]",Word,1,0
-57,"CNV_MOD_T_IGBT_1_MAX_C[1,1]",Short,1,0
-58,"CNV_MOD_T_IGBT_2_MAX_C[1,1]",Short,1,0
+50,CNV DC Power Command,Short,100,0
+51,CNV DC Current Comand,Short,100,0
+52,CNV DC Current Feedback,Short,1,0
+53,CNV DC Power Feedback,Short,1,0
+54,CNV Fault Code,Word,1,0
+55,CNV Warning Code,Word,1,0
+56,CNV Status Code,Word,1,0
+57,CNV IGBT Module Temperature,Short,1,0

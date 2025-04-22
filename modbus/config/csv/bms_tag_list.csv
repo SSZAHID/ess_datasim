@@ -1,14 +1,14 @@
 address,name,data type,scaling,offset
-0,"BMS_WARN_CODE[1,1]",Word,1,0
-1,"BMS_STS_CODE[1,1]",Word,1,0
-2,"BMS_V_DC_V[1,1]",Word,10,0
-3,"BMS_I_DC_A[1,1]",Word,10,2000
-4,"BMS_SOC_PCT[1,1]",Word,10,0
-5,"BMS_SOH_PCT[1,1]",Word,10,0
-10,"BMS_HB[1,1]",Word,1,0
-11,"BMS_STG_WARN_CODE[1,1]",Word,1,0
-12,"BMS_STG_SOC_PCT[1,1]",Word,10,0
-13,"BMS_STG_SOH_PCT[1,1]",Word,10,0
-14,"BMS_STG_V_DC_CELL_V[1,1]",Word,1000,0
-15,"BMS_STG_T_CELL_C[1,1]",Short,1,50
-16,"BMS_STG_CELL_BAL_STS[1,1]",Short,1,0
+0,BMS Warning Code,Word,1,0
+1,BMS Status Code,Word,1,0
+2,BMS System Voltage,Word,10,0
+3,BMS System Current,Word,10,2000
+4,BMS SOC,Word,10,0
+5,BMS SOH,Word,10,0
+10,BMS Heartbeat,Word,1,0
+11,BMS String Warning Code,Word,1,0
+12,BMS String SOC,Word,10,0
+13,BMS String SOH,Word,10,0
+14,BMS String Cell Voltage,Word,1000,0
+15,BMS String Cell Temperature,Short,1,50
+16,BMS String Cell Balancing State,Short,1,0
