@@ -1,0 +1,17 @@
+#Base Image 
+FROM python:3.12.7-slim
+
+#Set working directory 
+WORKDIR /ess_datasim
+
+#Install all required libraries 
+RUN pip install --no-cache-dir pandas pymodbus 
+
+#Expose port for modbus communication 
+EXPOSE 502 
+
+#Copy app files into the container 
+COPY . /ess_datasim
+
+#Command to run the modbus app 
+CMD [ "python3","modbus/simulator/start.py","--str_asset_type","bms"]

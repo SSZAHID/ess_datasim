@@ -1,0 +1,10 @@
+address,name,data type,scaling,offset
+100,"INV_FLT_CODE[1,1]",Word,1,0
+101,"INV_WARN_CODE[1,1]",Word,1,0
+102,"INV_STS_CODE[1,1]",Word,1,0
+103,"INV_P_FB_kW[1,1]",Short,1,0
+104,"INV_Q_FB_kVAR[1,1]",Short,1,0
+105,"INV_S_kVA[1,1]",Word,1,0
+106,"INV_F_P_CMD_PCT[1,1]",Short,100,0
+107,"INV_HB[1,1]",Word,1,0
+108,"INV_PF[1,1]",Short,1000,0
