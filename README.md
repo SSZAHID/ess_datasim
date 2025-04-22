@@ -60,10 +60,10 @@ It acts as a testbed where you can simulate various Modbus specs and create a te
   python start.py --asset inv
 
 - Defaults:
--   Port 502 
--   Unit ID 1 
--   Type Modbus
--   Sample Time 1s
+  - Port 502 
+  - Unit ID 1 
+  - Type Modbus
+  - Sample Time 1s
 
 ---
 
