@@ -1,0 +1,32 @@
+========================
+ Data Simulator Modbus 
+========================
+Server Name   : SHAYAN-SHARIF
+IP (DHCP)     : 10.0.0.159
+Port          :  502
+Unit ID       :  1
+Lib Path      : \ess_datasim\modbus\lib
+Log Path      : \ess_datasim\modbus\log
+Config Path   : \ess_datasim\modbus\config
+
+==================
+  Data Generation 
+==================
+Server Data Generated
+Server Data Tag List Generated
+Node Data Added     :  True
+Publishing Modbus Register : 0:[0]
+Publishing Modbus Register : 1:[0]
+Publishing Modbus Register : 2:[0]
+Publishing Modbus Register : 3:[2000]
+Publishing Modbus Register : 4:[0]
+Publishing Modbus Register : 5:[0]
+Publishing Modbus Register : 10:[0]
+Publishing Modbus Register : 11:[0]
+Publishing Modbus Register : 12:[0]
+Publishing Modbus Register : 13:[0]
+Publishing Modbus Register : 14:[0]
+Publishing Modbus Register : 15:[20]
+Publishing Modbus Register : 16:[65506]
+<Server sockets=(<asyncio.TransportSocket fd=1832, family=2, type=1, proto=6, laddr=('10.0.0.159', 502)>,)> is serving
+Server listening.

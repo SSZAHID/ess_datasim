@@ -1,0 +1,4 @@
+﻿server_name,service_name,dockerfile,container_name,ipv4_address,ports,restart,limits_cpus,limits_memory,reservations_cpus,reservations_memory,mem_limit,memswap_limit
+serv_01,bms_1_1,bms_dockerfile,bms_1_1,10.0.0.114,502:502,always,1,512M,0.5,256M,512M,1G
+serv_01,cnv_1_1,cnv_dockerfile,cnv_1_1,10.0.0.135,502:502,always,1,512M,0.5,256M,512M,1G
+serv_01,inv_1_1,inv_dockerfile,inv_1_1,10.0.0.155,502:502,always,1,512M,0.5,256M,512M,1G

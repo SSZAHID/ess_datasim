@@ -1,0 +1,73 @@
+networks:
+  data_sim_network:
+    driver: ipvlan
+    driver_opts:
+      parent: enp2s0
+    ipam:
+      config:
+      - gateway: 10.0.0.2
+        subnet: 10.0.0.0/24
+services:
+  bms_1_1:
+    build:
+      context: ./
+      dockerfile: bms_dockerfile
+    container_name: bms_1_1
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 512M
+        reservations:
+          cpus: '0.5'
+          memory: 256M
+    mem_limit: 512M
+    memswap_limit: 1G
+    networks:
+      data_sim_network:
+        ipv4_address: 10.0.0.114
+    ports:
+    - 502:502
+    restart: always
+  cnv_1_1:
+    build:
+      context: ./
+      dockerfile: cnv_dockerfile
+    container_name: cnv_1_1
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 512M
+        reservations:
+          cpus: '0.5'
+          memory: 256M
+    mem_limit: 512M
+    memswap_limit: 1G
+    networks:
+      data_sim_network:
+        ipv4_address: 10.0.0.135
+    ports:
+    - 502:502
+    restart: always
+  inv_1_1:
+    build:
+      context: ./
+      dockerfile: inv_dockerfile
+    container_name: inv_1_1
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 512M
+        reservations:
+          cpus: '0.5'
+          memory: 256M
+    mem_limit: 512M
+    memswap_limit: 1G
+    networks:
+      data_sim_network:
+        ipv4_address: 10.0.0.155
+    ports:
+    - 502:502
+    restart: always
